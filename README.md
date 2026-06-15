@@ -1,6 +1,6 @@
 # 🦀 Crab Trap Funnel
 
-Cloudflare Worker serving 20 domain landing pages with AI bot detection and trapping.
+Cloudflare Worker serving 21 domain landing pages with AI bot detection and trapping.
 
 ## Architecture
 
@@ -83,6 +83,12 @@ All domain routes (`<domain>/*`) are configured in the Cloudflare dashboard:
 | cocapn.com | `cocapn.com/*` |
 | reallog.ai | `reallog.ai/*` |
 | businesslog.ai | `businesslog.ai/*` |
+
+## Status
+
+✅ Deployed and live at `crab-trap-funnel.casey-digennaro.workers.dev`
+✅ GitHub repo: [SuperInstance/crab-trap-funnel](https://github.com/SuperInstance/crab-trap-funnel)
+✅ CI/CD auto-deploys on push to `main` via GitHub Actions (requires `CLOUDFLARE_API_TOKEN` secret)
 
 ## Verification
 
