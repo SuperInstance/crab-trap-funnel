@@ -1,0 +1,23 @@
+name = "crab-trap-funnel"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Account ID (can also be set via CLOUDFLARE_ACCOUNT_ID env var)
+# account_id = "049ff5e84ecf636b53b162cbb580aae6"
+
+# Workers AI crawler detection doesn't need any bindings
+# All 20 domain routes are configured in the Cloudflare dashboard:
+#   - Each domain has a */* route pointing to this worker
+#   - Domains: deckboss.net, deckboss.ai, lucineer.com, capitaine.ai,
+#     capitaineai.com, dmlog.ai, studylog.ai, playerlog.ai, purplepincher.org,
+#     personallog.ai, activelog.ai, cocapn.ai, makerlog.ai, api.cocapn.ai,
+#     superinstance.ai, luciddreamer.ai, fishinglog.ai, activeledger.ai,
+#     cocapn.com, reallog.ai, businesslog.ai
+
+# Static assets — the pages/ directory is deployed alongside the worker
+# Uncomment when wrangler v4 assets support is stable:
+# assets = { directory = "pages", not_found_handling = "none" }
+
+[env]
+# All env vars come from CI secrets or .env file
